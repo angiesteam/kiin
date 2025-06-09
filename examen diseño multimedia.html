@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>K'iin Há</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background-color: #90d4c5;
+    }
+
+    header {
+      background: url('img/hero-cenote.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 0 40px;
+    }
+
+    header img {
+      width: 250px;
+      height: 250px;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      background: rgba(0,0,0,0.5);
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background: #009688;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #00695c;
+      margin-bottom: 20px;
+    }
+
+    section img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+    }
+
+    input, textarea, button {
+      padding: 10px;
+      font-size: 1rem;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      background: #00796b;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #004d40;
+    }
+
+    footer {
+      background: #004d40;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer a {
+      color: #80cbc4;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    hr {
+      border: none;
+      border-top: 3px solid #004d40;
+      margin: 40px auto;
+      width: 80%;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>K'iin Há</h1>
+	   <img src="C:\Users\PC\Downloads\logo k'iin ha.png" alt="Logo K’iin Há" height="250">
+    <nav>
+      <ul>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#voluntariado">Voluntariado</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="nosotros">
+    <h2>¿Quiénes Somos?</h2>
+    <p>Somos una organización comprometida con la conservación de cenotes y aguas subterráneas. Nuestro trabajo está basado en el respeto a la naturaleza, la educación ambiental y la acción comunitaria.</p>
+    <p><strong>Misión:</strong> Proteger y restaurar los cenotes.</p>
+    <p><strong>Visión:</strong> Un futuro con aguas limpias y ecosistemas sanos.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/RS-Cascada.jpg" alt="Equipo de conservación en cenote">
+</section>
+
+  <hr>
+
+  <section id="proyectos">
+    <h2>Proyectos Destacados</h2>
+    <p>Trabajamos en distintas zonas de la península de Yucatán restaurando ecosistemas hídricos y educando a la población.</p>
+    <img src="https://mexicoxdescubrir.com/wp-content/uploads/2021/02/Riviera-Maya-cenotes-Yucatan.jpg" alt="Voluntarios trabajando en limpieza">
+  </section>
+
+  <hr>
+
+  <section id="voluntariado">
+    <h2>Únete como Voluntario</h2>
+    <p>Si te apasiona la naturaleza y quieres ayudar, este espacio es para ti. Acompáñanos en jornadas de limpieza, educación y monitoreo de cenotes.</p>
+    <form>
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea rows="4" placeholder="¿Por qué quieres ser voluntario?"></textarea>
+      <button type="submit">Enviar solicitud</button>
+    </form>
+  </section>
+
+  <hr>
+
+  <section id="noticias">
+    <h2>Noticias y Eventos</h2>
+    <p>Mantente informado sobre nuestros próximos eventos y logros.</p>
+    <ul>
+      <li><strong>15 de junio:</strong> Limpieza de cenote X’tabay</li>
+      <li><strong>Nuevo proyecto:</strong> Monitoreo de calidad del agua en Tulum</li>
+    </ul>
+    <img src="https://images.odigoo.com/cb6a1e9c-21c6-4165-9ba7-db9263d832a1/images/media/cenotes-chichen-itza/webp/cenote-ik-kil-cv0q.webp" alt="Evento ambiental">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 K'iin Há | Conservación de Cenotes</p>
+    <p>
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">YouTube</a>
+    </p>
+  </footer>
+
+</body>
+</html>
